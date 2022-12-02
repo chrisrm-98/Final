@@ -109,3 +109,17 @@ root.dir = "https://raw.githubusercontent.com/urbanSpatial/Public-Policy-Analyti
 source("https://raw.githubusercontent.com/urbanSpatial/Public-Policy-Analytics-Landing/master/functions.r")
 
 ```
+
+We started creating the markdown by installing the required packages and loading them into the library. Some of the mainly used packages are `tidyverse`, `tidycensus`, and `dplyr`. The final deliverable for this homework is an RMarkdown file with the required plots and tables, knitted to a HTML document. <br/><br/>
+
+------------------------------------------------------------------------
+
+# C. City of Mesa Data
+
+------------------------------------------------------------------------
+
+### I. Reading the Data 
+
+I used the `socrata` package for pulling data. The reason I chose weapons violations as the type of crime I wanted to take a closer look at is because of the increasing number of weapons related violent crime that has been occurring in the U.S. Coming from a country with stringent weapon control laws, it was interesting to study the relationship between weapons violations and spatial variables. 
+
+```{r Crime data, results='hide', warning = FALSE, message = FALSE, cache = TRUE}
