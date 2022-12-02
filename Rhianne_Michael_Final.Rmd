@@ -120,7 +120,7 @@ We started creating the markdown by installing the required packages and loading
 
 ### I. Reading the Data 
 
-I used the `socrata` package for pulling data. The reason I chose weapons violations as the type of crime I wanted to take a closer look at is because of the increasing number of weapons related violent crime that has been occurring in the U.S. Coming from a country with stringent weapon control laws, it was interesting to study the relationship between weapons violations and spatial variables. 
+Pulled data from Mesa, AZ Open Data
 
 ```{r Overdose data, results='hide', warning = FALSE, message = FALSE, cache = TRUE}
 
