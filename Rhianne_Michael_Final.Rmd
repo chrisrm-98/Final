@@ -30,6 +30,16 @@ Aims and purposes
 
 ### I. Installing Packages 
 
+```{r set working directory,}
+# Aidan WD
+#setwd("C:/Users/aidan/OneDrive/Documents/GitHub/Final")
+
+# Chris WD
+#setwd()
+
+```
+
+
 ```{r Setup, results='hide', warning = FALSE, message = FALSE}
 library(tidyverse)
 library(sf)
@@ -109,6 +119,7 @@ root.dir = "https://raw.githubusercontent.com/urbanSpatial/Public-Policy-Analyti
 source("https://raw.githubusercontent.com/urbanSpatial/Public-Policy-Analytics-Landing/master/functions.r")
 
 ```
+
 
 We started creating the markdown by installing the required packages and loading them into the library. Some of the mainly used packages are `tidyverse`, `tidycensus`, and `dplyr`. The final deliverable for this homework is an RMarkdown file with the required plots and tables, knitted to a HTML document. <br/><br/>
 
