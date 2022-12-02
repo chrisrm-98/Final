@@ -1,0 +1,111 @@
+---
+title: "Heroin Overdoses in the City of Mesa"
+author: "Aidan Rhianne & Chris Michael"
+date: "December 2nd, 2022"
+output: 
+  html_document:
+    df_print: paged
+    code_folding: hide
+    fig_caption: yes
+    toc: true
+    toc_float: true
+    theme: readable
+---
+
+------------------------------------------------------------------------
+
+# A. Introduction 
+
+------------------------------------------------------------------------
+
+### The Purpose of Predictive Overdoses
+
+Aims and purposes
+
+------------------------------------------------------------------------
+
+# B. Set-Up
+
+------------------------------------------------------------------------
+
+### I. Installing Packages 
+
+```{r Setup, results='hide', warning = FALSE, message = FALSE}
+library(tidyverse)
+library(sf)
+library(RSocrata)
+library(viridis)
+library(spatstat)
+library(raster)
+library(spdep)
+library(FNN)
+library(grid)
+library(gridExtra)
+library(RColorBrewer)
+library(knitr)
+library(kableExtra)
+library(tidycensus)
+library(classInt)   
+library(kableExtra)
+library(RColorBrewer)
+library(hrbrthemes)
+library(ggthemes)
+library(ggplot2)
+library(plotly)
+library(scales)
+library(extrafont)
+library(basetheme)
+library(RColorBrewer)
+library(lemon)
+library(data.table)
+library(GGally)
+require(gridExtra)
+library(ggalt)
+library(rgeos)
+library(sp)
+library(smoothr)
+library(rgdal)
+library(rgeos)
+library(maptools)
+library(ggmap)
+library(scales) 
+library(ggeasy)
+library("wesanderson")
+library(spdep)
+library(caret)
+library(ckanr)
+library(FNN)
+library(grid)
+library(ggcorrplot) 
+library(corrr)      
+library(kableExtra)
+library(jtools)     
+library(ggstance) 
+library(ggpubr)    
+library(broom.mixed) 
+library(tab)
+library(sjPlot)
+library(plotly)
+library(stargazer)
+library(pscl)
+library(plotROC)
+library(pROC)
+library(lubridate)
+
+col <- wes_palette("Zissou1")
+col5 <- colorRampPalette(col)(5)
+col6 <- colorRampPalette(col)(6)
+col7 <- colorRampPalette(col)(7)
+col8 <- colorRampPalette(col)(8)
+col10 <- colorRampPalette(col)(10)
+col22 <- colorRampPalette(col)(22)
+col29 <- colorRampPalette(col)(29)
+col96 <- colorRampPalette(col)(96)
+
+options(scipen = 999)
+options(tigris_class = "sf")
+
+root.dir = "https://raw.githubusercontent.com/urbanSpatial/Public-Policy-Analytics-Landing/master/DATA/"
+source("https://raw.githubusercontent.com/urbanSpatial/Public-Policy-Analytics-Landing/master/functions.r")
+
+```
