@@ -30,16 +30,6 @@ Aims and purposes
 
 ### I. Installing Packages 
 
-```{r set working directory,}
-# Aidan WD
-#setwd("C:/Users/aidan/OneDrive/Documents/GitHub/Final")
-
-# Chris WD
-#setwd()
-
-```
-
-
 ```{r Setup, results='hide', warning = FALSE, message = FALSE}
 library(tidyverse)
 library(sf)
@@ -132,6 +122,16 @@ We started creating the markdown by installing the required packages and loading
 ### I. Reading the Data 
 
 Pulled data from Mesa, AZ Open Data
+
+
+```{r set working directory,}
+# Aidan WD
+#setwd("C:/Users/aidan/OneDrive/Documents/GitHub/Final")
+
+# Chris WD
+setwd("C:/Users/Chris Michael/Desktop/UPenn/Fall 2022/508/MUSA_508_Lab-main/MUSA_508_Lab-main/Final")
+
+```
 
 ```{r Overdose data, results='hide', warning = FALSE, message = FALSE, cache = TRUE}
 
